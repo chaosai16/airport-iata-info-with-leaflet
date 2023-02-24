@@ -18,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<div><Navbar/><Main/><Flight/><Maps/><Footer/></div>}/>
         <Route path="/docs" element={<div><Navbar/><Airport/></div>}/>
+        <Route path="/blog" element={<div><Navbar/><Main/><Flight/><Footer/></div>}/>
       </Routes>
       </BrowserRouter>
     </div>
