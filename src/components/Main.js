@@ -5,7 +5,7 @@ function Main() {
     <div>
       <h1 className='text-center font-bold text-7xl p-7'>IATA 3 Letter Codes of Airports</h1>
       <h1 className='text-lg text-center'>IATA 3-letter codes, the location identifier code of airports and cities around the world.</h1>
-      <h1 className='text-center font-normal'>Enter the 3-letter IATA code of airports in INDIA</h1>
+      <h1 className='text-center font-bold'>Enter the 3-letter IATA code of airport in INDIA.</h1>
     </div>
   )
 }
