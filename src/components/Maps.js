@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { MapContainer, TileLayer,Marker,Popup } from 'react-leaflet'
 import { Icon } from 'leaflet';
 import markerIcon from '../images/marker-icon.png';
@@ -6,11 +6,12 @@ import 'leaflet/dist/leaflet.css';
 import '../App.css'
 import '../components/Flight'
 import { useEffect} from 'react';
-import {GoLocation} from 'react-icons/go'
+// import { useState} from 'react';
+// import {GoLocation} from 'react-icons/go'
 
  export default function Maps() {
-  const [lat,setLat]=useState('');
-  const [lng,setLng]=useState('');
+  // const [lat,setLat]=useState('');
+  // const [lng,setLng]=useState('');
   const customIcon = new Icon({
     iconUrl: markerIcon,
     iconSize: [20, 20],
@@ -19,8 +20,8 @@ import {GoLocation} from 'react-icons/go'
 
   useEffect(()=>{
     navigator.geolocation.getCurrentPosition((position)=>{
-      setLat(position.coords.latitude);
-      setLng(position.coords.longitude);
+      // setLat(position.coords.latitude);
+      // setLng(position.coords.longitude);
       console.log(`https://www.google.com/maps/@${position.coords.latitude},${position.coords.longitude},10.7z`)
     })
   })
