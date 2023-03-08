@@ -1,9 +1,9 @@
-import Flight from "./components/Flight"
+import Flight from "./components/Flight";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
-import Maps from "./components/Maps"
+import Maps from "./components/Maps";
 import Airport from "./components/Airport";
-import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 
 function App() {
@@ -15,11 +15,41 @@ function App() {
       <Maps/>
       <Airport/> */}
       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<div><Navbar/><Main/><Flight/><Maps/><Footer/></div>}/>
-        <Route path="/docs" element={<div><Navbar/><Airport/></div>}/>
-        <Route path="/blog" element={<div><Navbar/><Main/><Flight/><Footer/></div>}/>
-      </Routes>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <div>
+                <Navbar />
+                <Main />
+                <Flight />
+                <Maps />
+                <Footer />
+              </div>
+            }
+          />
+          <Route
+            path="/docs"
+            element={
+              <div>
+                <Navbar />
+                <Airport />
+                <Footer />
+              </div>
+            }
+          />
+          <Route
+            path="/blog"
+            element={
+              <div>
+                <Navbar />
+                <Main />
+                <Flight />
+                <Footer />
+              </div>
+            }
+          />
+        </Routes>
       </BrowserRouter>
     </div>
   );
